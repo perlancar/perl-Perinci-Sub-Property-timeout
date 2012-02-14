@@ -15,8 +15,8 @@ declare_property(
     wrapper => {
         meta => {
             # highest, we need to disable alarm right after call
-            prio=>0,
-            convert=>1,
+            prio    => 1,
+            convert => 1,
         },
         handler => sub {
             my ($self, %args) = @_;
