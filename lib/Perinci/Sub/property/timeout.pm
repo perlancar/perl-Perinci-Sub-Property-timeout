@@ -1,4 +1,4 @@
-package Perinci::Sub::Wrapper::property::timeout;
+package Perinci::Sub::property::timeout;
 
 use 5.010;
 use strict;
