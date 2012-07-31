@@ -14,6 +14,7 @@ declare_property(
     schema => ['int*' => {min=>0}],
     wrapper => {
         meta => {
+            v       => 2,
             # highest, we need to disable alarm right after call
             prio    => 1,
             convert => 1,
