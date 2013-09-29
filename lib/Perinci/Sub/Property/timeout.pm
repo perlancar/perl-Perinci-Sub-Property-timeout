@@ -1,6 +1,6 @@
 package Perinci::Sub::Property::timeout;
 
-use 5.010;
+use 5.010001;
 use strict;
 use warnings;
 
