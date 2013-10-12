@@ -36,7 +36,7 @@ declare_property(
 
             $self->select_section('after_eval');
             $self->_errif(504, "\"Timed out ($v sec(s))\"",
-                          '$eval_err =~ /\ATimed out\b/');
+                          '$_w_eval_err =~ /\ATimed out\b/');
         },
     },
 );
