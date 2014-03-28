@@ -26,12 +26,12 @@ declare_property(
 
             return unless $v > 0;
 
-            $self->select_section('before_call');
+            $self->select_section('before_call_right_before');
             $self->push_lines(
                 'local $SIG{ALRM} = sub { die "Timed out\n" };',
                 "alarm($v);");
 
-            $self->select_section('after_call');
+            $self->select_section('after_call_right_after');
             $self->push_lines('alarm(0);');
 
             $self->select_section('after_eval');
